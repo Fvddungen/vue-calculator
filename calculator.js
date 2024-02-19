@@ -9,6 +9,21 @@ const app = Vue.createApp({
     addEntry( number) {
       this.entry += number
     },
+    add() {
+
+    },
+    subtract() {
+
+    },
+    multiply() {
+
+    },
+    divide() {
+
+    },
+    finish() {
+
+    },
     clearAll() {
       this.total = 0
       this.entry = ''

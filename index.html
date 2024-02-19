@@ -11,27 +11,32 @@
       <p>Totaal: {{ total }}</p>
       <p>Invoer: {{ entry }}</p>
       <p>
-        <button>+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
-        <br/>
-        <button @click="addEntry(7)">7</button>
-        <button @click="addEntry(8)">8</button>
-        <button @click="addEntry(9)">9</button>
-        <button @click="clearAll()">C</button>
-        <br/>
-        <button @click="addEntry(4)">4</button>
-        <button @click="addEntry(5)">5</button>
-        <button @click="addEntry(6)">6</button>
-        <button @click="clearEntry()">CE</button>
-        <br/>
         <button @click="addEntry(1)">1</button>
         <button @click="addEntry(2)">2</button>
         <button @click="addEntry(3)">3</button>
-        <button>=</button>
-        <br/>
-        <button>0</button>
+        <button @click="addEntry(4)">4</button>
+        <button @click="addEntry(5)">5</button>
+      </p>
+
+      <p>
+        <button @click="addEntry(6)">6</button>
+        <button @click="addEntry(7)">7</button>
+        <button @click="addEntry(8)">8</button>
+        <button @click="addEntry(9)">9</button>
+        <button @click="addEntry(0)">0</button>
+      </p>
+
+      <p>
+        <button @click="add()">+</button>
+        <button @click="subtract()">-</button>
+        <button @click="multiply()">*</button>
+        <button @click="divide()">/</button>
+        <button @click="finish()">=</button>
+      </p>
+
+      <p>
+        <button @click="clearAll()">Clear all</button>
+        <button @click="clearEntry()">Clear Entry</button>
       </p>
     </div>
 
